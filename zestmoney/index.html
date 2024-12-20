@@ -15,7 +15,7 @@
 </head>
 <body>
   
-    <section class="container-fluid parent" >
+    <section class="container-fluid parent col-xl-12">
 
         <!-- background image and texts  -->
 
@@ -58,7 +58,7 @@
             <section class="leftSection col-sm-12 col-lg-6" style="background-color: green;">
                 <h1>Adjust Nahi, Zest Karo.</h1>
                 <p>A better life is for everyone. ZestMoney makes it possible to upgrade while keeping it affordable! Download the app to experience the smart way to shop!</p>
-                <button class="btn checkScoreButton btn-warning rounded-5" >Check Loan Amount now</button>
+                <button class="btn checkScoreButton btn-warning rounded-5 col-xl-6 fw-bolder text-light " >Check Loan Amount now</button>
             </section>
 
             <!-- right section  -->
@@ -69,16 +69,50 @@
         </section>
     </section>
     
+
     <!-- Buying section  -->
 
-    <section style="height: 100vh;">
-        <div class="topDiv">
-            <h1>Buy in 1 go, pay in 3 or more..</h1>
+    <section class ="buyingSectionParent">
+        <div class="topDiv col-xl-12">
+            <h1>Buy in 1 go, pay in 3 or more</h1>
         </div>
 
-        <div class="bottomDiv" >
+        <div class="bottomDiv col-xl-12" >
             <p>Enjoy guilt-free shopping and pay in 3,6,9 & 12 parts</p>
         </div>
+
+    </section>
+
+
+    <!-- Dynamic Div  -->
+
+    <section class="dynamicDiv" style="background-color: #f2f2f2;" >
+
+      <div style="margin-top: 5rem; margin-left: 5rem; width: 40%;">
+          <h1>As easy as 1, 2, 3</h1>
+      </div>
+
+      <div class="threeSectionParent" ">
+        <section >
+          
+          <p> <span>1</span> Download</p>
+          <p>Download the Zest app, complete your profile, and see what your credit limit is.</p>
+        </section>
+
+        <section>
+          
+          <p> <span>2</span> Activate</p>
+          <p>Upload your KYC, set up automatic repayments from your bank account, and you are set.</p>
+        </section>
+
+        <section>
+          <p> <span>3</span> Use</p>
+          <p>Use Zest to pay when making payments at 100,000 offline and 15,000 online stores. </p>
+        </section>
+
+      </div>
+
+      <button class="btn btn-success rounded-5 ms-5 w-25 fw-medium" >Check Loan Amount now</button>
 
     </section>
 
@@ -110,62 +144,57 @@
     <section class="bg-black footerSection">
         <div class="footerLogo"></div>
 
-        <div class="accordion footerAccordion" id="accordionExample">
-            <!-- accordion 1  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  PARTNERS
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>Flipkart</li>
-                    <li>Amazon</li>
-                    <li>Myntra</li>
-                    <li>View All</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- accordion 2  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  SUPPORT
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    <li>FAQ's</li>
-                    <li>Shop Smartly</li>
-                    <li>Security Information Centre</li>
-                    <li>Vulnerability Disclosure Program</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- accordion 3  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  COMPANY
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <ul>
-                        <li>About us</li>
-                        <li>Partner with us</li>
-                        <li>Lending Partners</li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-        </div>
 
+        <div class="accordion" id="accordionExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                PARTNERS
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Flipkart</p>
+                <p>Amazon</p>
+                <p>MakeMyTrip</p>
+                <p>View All Partners</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                SUPPORT
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>FAQs</p>
+                <p>Shop Smartly</p>
+                <p>Security Information Centre</p>
+                <p>Vulnerability Disclosure Program</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                COMPANY
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>About Us</p>
+                <p>Partner With US</p>
+                <p>Lending Partners</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
         <!-- social links  -->
 
@@ -182,5 +211,8 @@
     <!-- js for bootstrap  -->
     <script src="js/bootstrap.min.js" ></script>
 
+    <!-- custom js  -->
+
+    <script src = "customjavascript.js" ></script>
 </body>
 </html>

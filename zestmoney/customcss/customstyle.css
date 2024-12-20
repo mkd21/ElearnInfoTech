@@ -140,7 +140,6 @@ html
     {
         height: 100vh;
         background-image: url("../images/backgroundImage/5reasonsImage/blueWall-sm.jpg");
-
     }
     .actual5reasonsSection ul 
     {
@@ -296,6 +295,7 @@ html
         background-repeat: no-repeat;
         margin-top: -12px;
     }
+    
     .actual5reasonsSection ul
     {
         font-size: clamp(2rem, 5vw, 3.5rem);
@@ -327,6 +327,7 @@ html
     {
         height: 60vh;
         padding-top: 1.3rem;
+        /* margin-top: 19.1rem; */
     }
     .footerLogo
     {
@@ -348,7 +349,7 @@ html
 
 /* large devices  */
 
-@media (min-width : 1000px) and (max-width : 1200px) {
+@media (min-width : 992px) and (max-width : 1200px) {
     
     .parent
     {
@@ -406,10 +407,197 @@ html
         height: 4.2rem;
         word-spacing: 7px;
     }
+
     .rightSection
     {
         background-image: url("../images/backgroundImage/mediumScreen/newhomeBannertab.jpg");
         background-size: cover;
         background-position: 37%;
+    }
+
+    .buyingSectionParent
+    {
+        background-image: url("../images/invertedMobileImages/forMidSizeScreenTop.png");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right -13%;
+        background-size: 33%;
+    }
+    .topDiv{ height: 50vh; }
+
+    .bottomDiv{ 
+        background-color: #f2f2f2;
+        height: 50vh; 
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .topDiv h1
+    {
+        font-size: clamp(1rem, 9vw, 14rem);
+        padding-left: 3.1rem;
+        width: 55%;
+        font-weight: 800;
+        margin-top: 50px;
+    }
+    .bottomDiv p
+    {
+        padding-left: 3.1rem;
+        font-size: clamp(1rem, 2vw, 4rem);
+        font-weight: 700;
+        margin-top: -313px;
+        letter-spacing: 2px;
+    }
+
+    .dynamicDiv
+    {
+        height: 50vh;
+        background-image: url("../images/invertedMobileImages/FormidSizeScreenbottom.png");
+        background-repeat: no-repeat;
+        background-position: 103%;
+        background-size: contain;
+        overflow:hidden;
+        width: 98vw;
+    }
+    .dynamicDiv h1
+    {
+        font-size: clamp(2rem, 9vw, 9rem);
+        font-weight: 900;
+    }
+    .dynamicDiv button
+    {
+        margin-top: -11%;
+    }
+    .threeSectionParent
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 44%;
+    }
+    .threeSectionParent span
+    {
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        padding: 16px 20px;
+        font-size: 1.2rem;
+    }
+    .threeSectionParent section 
+    {
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+
+    .footerSection
+    {
+        height: 50vh;
+        padding-top: 4%;
+    }
+    .footerLogo
+    {
+        background-image: url("../images/logo/Zest-new.png");
+        background-repeat: no-repeat;
+        height : clamp(5px, 15%, 200px);
+    }
+    .socialHandleParent
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 14vh;
+    }
+}
+
+
+/* extra large devices  */
+
+@media (min-width : 1200px) {
+    
+    .parent
+    {
+        height: 123vh;
+    }
+    .navbar 
+    {
+        position: absolute;
+        top:0;
+    }
+    .navbar-brand
+    {
+        margin-right: 5.2rem;
+    }
+    .leftandRightSectionHolder
+    {
+        height: 100%;
+    }
+    .leftSection
+    {
+        padding-top: clamp(4rem, 25vh, 13rem);
+        padding-left: clamp(2rem, 5vw, 4rem);
+    }
+    .leftSection h1
+    {
+        font-size: clamp(3rem, 6.3vw, 8rem);
+        font-weight: 800;
+        color: white;
+        word-spacing: 11px;
+    }
+    .leftSection p
+    {
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        font-weight: 500;
+        color: white;
+    }
+    .leftSection button 
+    {
+        height: 3.2rem;
+        text-shadow: 8px 7px 10px black;
+        margin-top: 2.1rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(5)
+    {
+        margin-left: 26.2rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(6)
+    {
+        margin-left: 2.2rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(1) , li:nth-child(2) , li:nth-child(3) , li:nth-child(4)
+    {
+        font-size: clamp(1rem, 2vw, 4rem);
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .rightSection
+    {
+        background-image: url("../images/backgroundImage/newhomeBanner.png");
+        background-size: cover;
+    }
+
+    /* Buying section  */
+
+    .buyingSectionParent
+    {
+        position: relative;
+    }
+    .topDiv
+    {
+        height: 80vh;
+    }
+    .topDiv h1
+    {
+        font-size: 6rem;
+        width: 50%;
+        font-weight: 800;
+        margin-left: clamp(5%, 23vw, 52%);
+    }
+    .bottomDiv
+    {
+        position: absolute;
+        top: 37%;
+        padding-left: clamp(5%, 23.3vw, 54%);
+        font-weight: 600;
+        word-spacing: 4px;
     }
 }
