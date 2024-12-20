@@ -65,6 +65,7 @@ const creating5_reasons_section = () =>{
     upperDiv.style.display = "none";
     lowerDiv.style.display = "none";
 
+    dynamicDiv.append(parentDIV_5reasons_section);
     buyingSectionDiv.append(dynamicDiv);
 }
 
@@ -96,3 +97,26 @@ controlOnDynamicDiv();
 
 
 window.addEventListener("resize" , controlOnDynamicDiv);
+
+/*
+    
+    when screen size is small than 1000 px then remove the dynamic div , upper div and lower div.
+
+    if not then 
+
+    make the dynamic div back to normal ie display : block
+
+    after that call the function named creating5_reasons_section(). 
+
+    this function created the complete div and it's content using js.
+
+    after that append process takes place accordingly
+
+    ---> parentDiv gets appended with h1 and ULDiv 
+    
+    ---> dynamicDiv gets appended by parentDiv
+
+    ---> buyingSectionDiv gets appended by dynamic div
+
+
+*/
