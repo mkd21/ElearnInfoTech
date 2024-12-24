@@ -295,7 +295,7 @@ html
         background-repeat: no-repeat;
         margin-top: -12px;
     }
-    
+
     .actual5reasonsSection ul
     {
         font-size: clamp(2rem, 5vw, 3.5rem);
@@ -507,16 +507,44 @@ html
         align-items: center;
         height: 14vh;
     }
+    .five_reasons_parent_div
+    {
+        background-image: url(../images/backgroundImage/5reasonsImage/largeScreens.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .five_reasons_parent_div h1
+    {
+        font-size: clamp(3rem, 18vw, 11rem) !important;
+        padding-left: 4.1rem;
+        font-weight: 900;
+        color: white;
+        padding-top: 2%;
+        width: 67% !important;
+        margin-left: 12% !important;
+    }
+    .five_reasons_parent_div ul
+    {
+        width: 50% !important;
+        margin-left: 12rem !important;
+        margin-top: 3.2rem !important;
+        padding-bottom: 5% !important;
+    }
+    .five_reasons_parent_div ul li
+    {
+        font-size: clamp(1rem, 2vw, 1.3rem) !important;
+    }
 }
 
 
 /* extra large devices  */
 
-@media (min-width : 1200px) {
+@media (min-width : 1200px) and (max-width : 1500px) {
     
     .parent
     {
-        height: 123vh;
+        height: 174vh;
     }
     .navbar 
     {
@@ -557,7 +585,7 @@ html
     }
     .leftandRightSectionHolder nav ul li:nth-child(5)
     {
-        margin-left: 26.2rem;
+        margin-left: 17rem;
     }
     .leftandRightSectionHolder nav ul li:nth-child(6)
     {
@@ -595,9 +623,234 @@ html
     .bottomDiv
     {
         position: absolute;
-        top: 37%;
+        top: clamp(67%, 56vh, 89%);
         padding-left: clamp(5%, 23.3vw, 54%);
         font-weight: 600;
         word-spacing: 4px;
+    }
+
+    /* dynamic div  */
+
+    .dynamicDiv h1
+    {
+        font-size: 6rem;
+        width: 32%;
+        font-weight: 800;
+        margin-left: clamp(5%, 23vw, 52%);
+    }
+
+    .threeSectionParent
+    {
+        display: flex;
+        padding-left: clamp(12%, 23vw, 53%);
+    }
+    .threeSectionParent section 
+    {
+        width: 21%;
+        margin-right: clamp(2%, 6vw, 16%);
+    }
+    .threeSectionParent section p:nth-child(1)
+    {
+        font-weight: 900;
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+    .threeSectionParent section p:nth-child(2)
+    {
+        font-weight: 600;
+    }
+    .dynamicDiv button
+    {
+        margin-left: clamp(12%, 23vw, 53%);
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .five_reasons_parent_div
+    {
+        background-image: url(../images/backgroundImage/5reasonsImage/largeScreens.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .five_reasons_parent_div h1
+    {
+        font-size: clamp(3rem, 18vw, 11rem) !important;
+        padding-left: 4.1rem;
+        font-weight: 900;
+        color: white;
+        padding-top: 2%;
+        width: 67% !important;
+        margin-left: 12% !important;
+    }
+    .five_reasons_parent_div ul
+    {
+        width: 50% !important;
+        margin-left: 12rem !important;
+        margin-top: 3.2rem !important;
+        padding-bottom: 5% !important;
+    }
+    .five_reasons_parent_div ul li
+    {
+        font-size: clamp(1rem, 2vw, 1.3rem) !important;
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+        color: white;
+    }
+}
+
+
+@media (min-width : 1500px)
+{
+    .parent
+    {
+        height: 174vh;
+    }
+    .navbar 
+    {
+        position: absolute;
+        top:0;
+    }
+    .navbar-brand
+    {
+        margin-right: 5.2rem;
+    }
+    .leftandRightSectionHolder
+    {
+        height: 100%;
+    }
+    .leftSection
+    {
+        padding-top: clamp(4rem, 25vh, 13rem);
+        padding-left: clamp(2rem, 5vw, 4rem);
+    }
+    .leftSection h1
+    {
+        font-size: clamp(3rem, 6.3vw, 8rem);
+        font-weight: 800;
+        color: white;
+        word-spacing: 11px;
+    }
+    .leftSection p
+    {
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        font-weight: 500;
+        color: white;
+    }
+    .leftSection button 
+    {
+        height: 3.2rem;
+        text-shadow: 8px 7px 10px black;
+        margin-top: 2.1rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(5)
+    {
+        margin-left: 17rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(6)
+    {
+        margin-left: 2.2rem;
+    }
+    .leftandRightSectionHolder nav ul li:nth-child(1) , li:nth-child(2) , li:nth-child(3) , li:nth-child(4)
+    {
+        font-size: clamp(1rem, 2vw, 4rem);
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .rightSection
+    {
+        background-image: url("../images/backgroundImage/newhomeBanner.png");
+        background-size: cover;
+    }
+
+    /* Buying section  */
+
+    .buyingSectionParent
+    {
+        position: relative;
+    }
+    .topDiv
+    {
+        height: 80vh;
+    }
+    .topDiv h1
+    {
+        font-size: 6rem;
+        width: 50%;
+        font-weight: 800;
+        margin-left: clamp(5%, 23vw, 52%);
+    }
+    .bottomDiv
+    {
+        position: absolute;
+        top: clamp(67%, 56vh, 89%);
+        padding-left: clamp(5%, 23.3vw, 54%);
+        font-weight: 600;
+        word-spacing: 4px;
+    }
+
+    /* dynamic div  */
+
+    .dynamicDiv h1
+    {
+        font-size: 6rem;
+        width: 32%;
+        font-weight: 800;
+        margin-left: clamp(5%, 23vw, 52%);
+    }
+
+    .threeSectionParent
+    {
+        display: flex;
+        padding-left: clamp(12%, 23vw, 53%);
+    }
+    .threeSectionParent section 
+    {
+        width: 21%;
+        margin-right: clamp(2%, 6vw, 16%);
+    }
+    .threeSectionParent section p:nth-child(1)
+    {
+        font-weight: 900;
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+    .threeSectionParent section p:nth-child(2)
+    {
+        font-weight: 600;
+    }
+    .dynamicDiv button
+    {
+        margin-left: clamp(12%, 23vw, 53%);
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+    .five_reasons_parent_div
+    {
+        background-image: url(../images/backgroundImage/5reasonsImage/largeScreens.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .five_reasons_parent_div h1
+    {
+        font-size: clamp(3rem, 18vw, 11rem) !important;
+        padding-left: 4.1rem;
+        font-weight: 900;
+        color: white;
+        padding-top: 2%;
+        width: 67% !important;
+        margin-left: 12% !important;
+    }
+    .five_reasons_parent_div ul
+    {
+        width: 50% !important;
+        margin-left: 12rem !important;
+        margin-top: 3.2rem !important;
+        padding-bottom: 5% !important;
+    }
+    .five_reasons_parent_div ul li
+    {
+        font-size: clamp(1rem, 2vw, 1.3rem) !important;
+        border-bottom: 2px solid white;
+        padding-bottom: 3px;
+        color: white;
     }
 }
