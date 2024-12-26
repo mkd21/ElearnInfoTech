@@ -1,0 +1,138 @@
+@media (min-width : 1400px)
+{
+    .container
+    {
+        max-width: 1490px;
+    }
+    #topBanner
+    {
+        padding: 1.2rem;
+        background-color: #2a2c30;
+    }
+    .navbar-brand img 
+    {
+        width: 25%;
+    }
+    #left 
+    {
+        margin-left: 1.4rem;
+    }
+    .navbar-nav
+    {
+        margin-left: 19.2rem !important;
+        align-items: center;
+    }
+
+
+    /* hereo section  */
+
+    #heroSection
+    {
+        background-color: #d9e9ff;
+        background-image: linear-gradient(to top right, #3d86fa, #4484fb, #679eff, #b3d2ff, #ebf3fe);
+        height: 90vh;
+        max-width: 1468px;
+    }
+
+    .leftDiv
+    {
+        padding-left: 3.2rem;
+    }
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        padding-top: 6.2rem;
+        font-weight: 500;
+    }
+    .leftDiv p:nth-child(2)
+    {
+        font-size: clamp(1rem, 4vw, 4rem);
+        font-weight: 500;
+        color: #18182d;
+        text-shadow: 1px 3px 4px black;
+    }
+    .leftDiv p:nth-child(3)
+    {
+        margin-top: 3.2rem;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-weight: 500;
+        color: white;
+    }
+    .leftDiv button 
+    {
+        margin-top: 2.2rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+        padding: 1rem;
+    }
+    
+    /* 3 card section  */
+    
+    .Three_card_grandParent
+    {
+        height: 50vh;
+        padding-top: 3.3rem;
+        max-width: 1468px;
+    }
+
+    .threeProducts_card 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+        height: 16rem;
+        border-radius: 15px;
+        background-color : #e1e4ee;
+        margin-right: 1.5rem;
+        margin-left: -0.7rem;
+        box-shadow: 4px 6px 9px #e09292;
+    }
+      
+    .card-description 
+    {
+        flex-grow: 1;
+    }  
+    .card-description p 
+    {
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        color: red;
+        text-shadow: 3px 5px 8px rebeccapurple;
+    }
+
+    .card-image img 
+    {
+        width: 100%;
+        rotate: 12deg;
+    }
+
+
+    /* facilities provided  */
+
+    #facilitiesProvides
+    {
+        height: 25vh;
+        padding-top: 2.3rem;
+        box-shadow: 2px 2px 4px grey;
+    }
+    .facilityProvidedCards
+    {
+        height: 80%;
+    }
+    .smallLogo
+    {
+        font-size: clamp(1rem, 3vw, 2.5rem);
+        color: #4e4e8c;
+        margin-left: 1.2rem;
+    }
+    .details p:nth-child(1)
+    {
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .details p:nth-child(2)
+    {
+        text-transform: capitalize;
+    }
+}
