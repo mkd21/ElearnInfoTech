@@ -210,8 +210,68 @@
     
     <!-- ========== Start Why Choose US Section ========== -->
 
-      <section class="container" >
-        <h1>Why Choose Us</h1>
+      <section class="container" id="whyChooseUs">
+        <!-- <h1>Why Choose Us</h1>
+        <p>Choose Thapa EduHub for a holistic, enriching learning experience that empowers you to achieve your goals.</p> -->
+
+        <template id="productCard-template">
+
+            <!-- product cards section  -->
+              <div class="cardParent">
+
+                <div class="itemType">
+                  <p>Computers</p>
+                </div>
+
+                <div class="productImage">
+                  <img src="./src/images/lapi.png" />
+                </div>
+
+                <div class="productName">
+                  <p>Laptop</p>
+                </div>
+
+                <div class="productRating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="prod-description">
+                  <p>Powerful laptop with a quad-core i5 processor, 8GB RAM, 256GB SSD, and a 14-inch FHD display.</p>
+                </div>
+
+                <div class="product_price">
+                  <span class="currentPrice">&#8377; 999</span> 
+                  <span class="previousPrice" style="text-decoration: line-through;" >&#8377; 3999</span>
+                </div>
+
+                <div class="totalStock">
+                  <span>Total Stocks Available:</span>
+                  <span>50</span>
+                </div>
+
+                <div class="quantityToAddinCart d-flex align-items-center">
+
+                  <span>Quantities(Pieces)</span>
+
+                  <span class=" productIncrementDecrementFunctionality d-flex align-items-center justify-content-center">
+                    <button class="btn btn-success" >+</button>
+                    <p>1</p>
+                    <button class="btn btn-danger">-</button>
+                  </span>
+
+                </div>
+
+                <div class="addToCardButton">
+                  <button class="btn btn-warning" > <i class="fa-solid fa-cart-shopping"></i> Add To Cart </button>
+                </div>
+              </div>
+
+        </template>
+        
+
       </section>
     
     <!-- ========== End Why Choose US Section ========== -->
@@ -228,7 +288,8 @@
 
 
     <!-- custom js  -->
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/custom_js/main.js"></script>
+    <!-- <script type="module" src="./src/custom_js/workingWith_template.js"></script> -->
     
   </body>
 </html>
