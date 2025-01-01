@@ -1,0 +1,43 @@
+
+
+we can make the use of template element to dynamically display the elements 
+which is inside the template element multiple times without writing them again and again 
+
+for example
+
+if we want to render multiple cards then in that case template element is very useful we can loop as our requirement and render the 
+same code again and again.
+
+
+we just need to create a clone of the template element each time and we need a normal html element to which we will
+
+attach the template element 
+
+
+
+template element behaviour in different scenarios
+
+------ this will work fine ----
+
+clonedTemplate.querySelector(".productIncrementDecrementFunctionality").addEventListener("click" , (e) => {
+    console.log("hello");
+})
+                
+parentOfProduct.append(clonedTemplate);
+
+
+----this will throw an error------
+                
+parentOfProduct.append(clonedTemplate);
+
+clonedTemplate.querySelector(".productIncrementDecrementFunctionality").addEventListener("click" , (e) => {
+    console.log("hello");
+})
+
+
+why because the template element resides inside DocumentFragment 
+
+when we append DocumentFragment to DOM then the DocumentFragment becomes empty 
+
+that's why eventListener activty must happen before the appending
+

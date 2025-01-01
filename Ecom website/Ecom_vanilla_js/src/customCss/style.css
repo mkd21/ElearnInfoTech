@@ -137,6 +137,17 @@
     }
 
 
+    /* some of our product section  */
+
+    #someofOurProductSection
+    {
+        margin-top: 2.2rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-shadow: 10px 10px 14px #14324f;
+    }
+
+
     /* why choose us section  */
 
     #whyChooseUs
@@ -145,16 +156,19 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 5.2rem;
         padding-top: 3.2rem;
+        padding-left: 5.2rem;
+        padding-right: 5.2rem;
     }
 
 
     /* product card section  */
     .cardParent
     {
-        height: 108vh;
+        height: 100vh;
         /* background-color: #4484fb; */
         padding-top: 1.1rem;
         padding-left: 1.1rem;
+        padding-right: 1.1rem;
         border-radius: 23px;
         box-shadow: 4px 6px 7px grey;
     }
@@ -178,12 +192,7 @@
     {
         font-size: clamp(1rem, 5vw, 2rem);
         font-weight: 500;
-        margin-top: -2.1rem;
     }
-    /* .productRating
-    {
-        margin-top: -1.2rem;
-    } */
     .productRating i 
     {
         color: goldenrod;

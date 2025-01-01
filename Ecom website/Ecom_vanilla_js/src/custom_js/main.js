@@ -2,4 +2,7 @@
 
 import {parentOfAllActivity} from "./workingWith_template";
 
-parentOfAllActivity();
+
+document.addEventListener("DOMContentLoaded" , () =>{
+    parentOfAllActivity();
+})
