@@ -74,21 +74,21 @@
             <section class="actualCardContainer">
 
                 <div class="productsCard d-flex align-items-center justify-content-between mb-4 rounded-4">
-                    <section class="typeOfProduct bg-danger-subtle p-1 rounded">Computer</section>
-                    <section class="imageOfProduct "> <img src="../public/images/lapi.png" /> </section>
-                    <section class="productName" >Laptop</section>
-                    <section class="productPrice"> <p>39900</p> </section>
+                    <section class="typeOfProduct bg-danger-subtle p-1 rounded col-lg-1 text-center ">Computer</section>
+                    <section class="imageOfProduct col-lg-2 text-center"> <img src="../public/images/lapi.png" /> </section>
+                    <section class="productName col-lg-3 text-center ">Laptop</section>
+                    <section class="productPrice col-lg-1 text-center fw-bolder"> <p>39900</p> </section>
     
                     <!-- increment and decrement section  -->
-                    <section class="d-flex justify-content-around align-items-center bg-body-tertiary inc_dec_Parent ">
-                        <div>+</div>
-                        <div>3</div>
-                        <div>-</div>
+                    <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-lg-2 ">
+                        <div class="incrementBtn btn btn-success" >+</div>
+                        <div class="quantityDisplaySection" >3</div>
+                        <div class="decrementBtn btn btn-danger" >-</div>
                     </section>
     
                     <!-- remove button  -->
     
-                    <button class="btn btn-danger" >Remove</button>
+                    <button class="btn btn-warning removeBtn col-2">Remove</button>
                 </div>
     
                 <template class="" id="cartItemsTemplate" >
@@ -111,7 +111,7 @@
 
 
      <!-- custom js  -->
-     <script type="module" src="../src/custom_js/cart page logics/cartPageMain.js"></script>
+     <script type="module" src="../src/custom_js/cart_page_logic/cartPageMain.js"></script>
 
 </body>
 </html>

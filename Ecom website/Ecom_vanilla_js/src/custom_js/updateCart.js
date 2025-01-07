@@ -2,7 +2,7 @@
 export const updateCart = () =>{
 
 
-    let addedItems = JSON.parse( localStorage.getItem("products")).length;
+    let addedItems = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")).length : 0;
 
     console.log(addedItems);
     

@@ -20,11 +20,27 @@ const addToCart  = (id) =>{
     // filtered price ie removed the rupee sign 
     const onlyNumeric_value = priceOfOneItem_currencySign_included.replace("₹", "");
 
+    // image of producct 
+    const productImage = targetCard.querySelector(".productImage").querySelector("img").src;
+
+
+    // category of product 
+
+    const productCategory = targetCard.querySelector(".itemType").innerText;
+
+    console.log(productCategory);
+
+    // name of product 
+
+    const productName = targetCard.querySelector(".productName").innerText;
 
     const total = {
         productId : id,
         totalItems : quantityTobeAdded_display_section.innerText,
-        totalPrice : Math.round((onlyNumeric_value * quantityTobeAdded_display_section.innerText) * 100) / 100
+        totalPrice : Math.round((onlyNumeric_value * quantityTobeAdded_display_section.innerText) * 100) / 100,
+        productImage : productImage,
+        productCategory : productCategory,
+        productName : productName
     };
 
 

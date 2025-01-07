@@ -261,8 +261,16 @@
     .productsCard
     {
         height: 30vh;
-        border:1px solid black;
+        border:1px solid rgb(232, 197, 197);
+        box-shadow:10px 10px 14px grey;
     }
+
+    .typeOfProduct
+    {
+        margin-left: 1.1rem;
+        font-weight: 600;
+    }
+
     .imageOfProduct
     {
         width: 14%;
@@ -271,11 +279,10 @@
     {
         width: 100%;
     }
-
-    .inc_dec_Parent
+    
+    .removeBtn
     {
-        width: 10%;
-        height: 20%;
+        margin-right: 1.1rem;
     }
 
 /*****  CART PAGE END  *****/
