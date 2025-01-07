@@ -2,6 +2,7 @@
 const data = import("../api/data.json");
 
 import incrementDecrementLogic from "./incrementDecrementCartLogic.js";
+import addToCart from "./addToCartFunctionality.js";
 
 export const parentOfAllActivity = () =>{
 
@@ -36,6 +37,14 @@ export const parentOfAllActivity = () =>{
                 clonedTemplate.querySelector(".productIncrementDecrementFunctionality").addEventListener("click" , (e) => {
                     incrementDecrementLogic(e , stock , id);
                 });
+
+
+                clonedTemplate.querySelector(".addToCardButton").addEventListener( "click" , (e) =>{
+
+                    // calling the addTocart logic function 
+                    addToCart(id);
+                }); 
+                
                 
                 // appending the clonedTemplate to the normal html element 
                 parentOfProduct.append(clonedTemplate);

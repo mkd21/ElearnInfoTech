@@ -242,4 +242,42 @@
     {
         margin-top:1.2rem;
     }
+
+
+
+/***** CART PAGE START *****/ 
+
+    .parentOfItemsContainer
+    {
+        max-width: 1468px;
+        margin-top: 6.2rem;
+    }
+
+    .actualCardContainer
+    {
+        margin: 0 4.2rem;
+    }
+
+    .productsCard
+    {
+        height: 30vh;
+        border:1px solid black;
+    }
+    .imageOfProduct
+    {
+        width: 14%;
+    }
+    .imageOfProduct img 
+    {
+        width: 100%;
+    }
+
+    .inc_dec_Parent
+    {
+        width: 10%;
+        height: 20%;
+    }
+
+/*****  CART PAGE END  *****/
+    
 }
