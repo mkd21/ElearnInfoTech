@@ -69,36 +69,45 @@
     <!-- ========== Start products inside cart Section ========== -->
     
     <div class="container parentOfItemsContainer ">
-        
-        <template id="cartPageTemplateElement" >
-            <section class="actualCardContainer">
-
-                <div class="productsCard d-flex align-items-center justify-content-between mb-4 rounded-4">
-                    <section class="typeOfProduct bg-danger-subtle p-1 rounded col-lg-1 text-center ">Computer</section>
-                    <section class="imageOfProduct col-lg-2 text-center"> <img src="../public/images/lapi.png" /> </section>
-                    <section class="productName col-lg-3 text-center ">Laptop</section>
-                    <section class="productPrice col-lg-1 text-center fw-bolder"> <p>39900</p> </section>
-    
-                    <!-- increment and decrement section  -->
-                    <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-lg-2 ">
-                        <div class="incrementBtn btn btn-success" >+</div>
-                        <div class="quantityDisplaySection" >3</div>
-                        <div class="decrementBtn btn btn-danger" >-</div>
-                    </section>
-    
-                    <!-- remove button  -->
-    
-                    <button class="btn btn-warning removeBtn col-2">Remove</button>
-                </div>
-    
-                <template class="" id="cartItemsTemplate" >
-    
-                </template>
-            </section>
-        </template>
-        
-
+      <!-- will render the cards using template element  -->
     </div>
+
+    <!-- template element start -->
+
+    <template id="cartPageTemplateElement" >
+      <section class="actualCardContainer">
+
+          <div class="productsCard d-flex align-items-center justify-content-between mb-4 rounded-4">
+              <section class="typeOfProduct bg-danger-subtle p-1 rounded col-lg-1 text-center ">Computer</section>
+              <section class="imageOfProduct col-lg-2 text-center"> <img src="../public/images/lapi.png" /> </section>
+              <section class="productName col-lg-3 text-center ">Laptop</section>
+              <section class="productPrice col-lg-1 text-center fw-bolder"> <p>&#8377; 2222</p> </section>
+
+              <!-- increment and decrement section  -->
+              <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-lg-2 ">
+                  <div class="incrementBtn btn btn-success" >+</div>
+                  <div class="quantityDisplaySection" >3</div>
+                  <div class="decrementBtn btn btn-danger" >-</div>
+              </section>
+
+              <!-- remove button  -->
+
+              <button class="btn btn-warning removeBtn col-2">Remove</button>
+          </div>
+
+      </section>
+    </template>
+
+    <!-- template element end -->
+
+
+    <!-- template element when cart is empty  -->
+
+    <template id = "emptyCart" >
+      <div class="emptyCart_git_Holder">
+        <img src="../public/empty_Cart_GIF/icons8-empty-cart.gif" alt="empty shopping cart">
+      </div>
+    </template>
 
     <!-- ========== End products inside cart Section ========== -->
     

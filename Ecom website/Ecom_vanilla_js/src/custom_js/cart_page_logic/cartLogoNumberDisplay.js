@@ -6,8 +6,6 @@ import {updateCart} from "../updateCart.js";
 
 export const productsPresentInCart = () =>{
 
-   console.log("hello");
-
    updateCart();
 
 }

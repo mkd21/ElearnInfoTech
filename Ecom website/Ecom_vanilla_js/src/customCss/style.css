@@ -285,6 +285,26 @@
         margin-right: 1.1rem;
     }
 
+    .emptyCart_git_Holder
+    {
+        padding-left: 45%;
+    }
+    
+    .emptyCart_git_Holder img 
+    {
+        display: block;
+        width: 10%;
+    }
+
+    .emptyCart_git_Holder p 
+    {
+        margin-top: 3%;
+        font-size: 2.2rem;
+        margin-left: -26%;
+        font-weight: 500;
+        text-shadow: 4px 5px 10px #8f4508;
+    }
+
 /*****  CART PAGE END  *****/
     
 }
