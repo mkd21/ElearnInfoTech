@@ -4,6 +4,7 @@ import { loadProducts } from "../loading_products_based_on_DB_and_rendering_usin
 
 import {productsPresentInCart} from "../cartLogoNumberDisplay.js";
 
+import {sumUpTotalInitialtorFunction} from "../totalProductsSection/totalProduct.js";
 
 export const removeElements = (productId) =>{
 
@@ -28,4 +29,5 @@ export const removeElements = (productId) =>{
 
     loadProducts();
     productsPresentInCart();
+    sumUpTotalInitialtorFunction();
 }

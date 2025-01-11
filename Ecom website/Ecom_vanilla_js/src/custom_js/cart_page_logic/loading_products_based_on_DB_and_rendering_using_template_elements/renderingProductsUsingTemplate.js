@@ -6,11 +6,17 @@
 
 import { removeElements } from "../logic_For_Remove_Items_From_Cart/removeElementsFromCart.js";
 
+
+// function which will control inc and dec of product and will change the DB accordingly
+
+import inc_dec_cartPage_DB_changes from "../inc_dec_products_from_Cart_update_in_DB/inc_dec_mainFile.js";
+
+
 export const loadProducts = () =>{
 
     const presentData =  localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : [];
 
-    console.log("present data is",presentData);
+    // console.log("present data is",presentData);
 
     if(presentData.length != 0)
     {
@@ -25,6 +31,7 @@ export const loadProducts = () =>{
 
             const cloneTemplateElement = templateReference.content.cloneNode(true);
 
+            cloneTemplateElement.querySelector(".actualCardContainer").id = `productCard${iter.productId}`;
 
             cloneTemplateElement.querySelector(".typeOfProduct").innerText = iter.productCategory; 
 
@@ -40,8 +47,19 @@ export const loadProducts = () =>{
                 removeElements(iter.productId);
             });
 
+            
+            cloneTemplateElement.querySelector(".inc_dec_Parent").addEventListener("click" , (e) =>{
+                
+                const referenceOfEachSection = document.querySelector(`#productCard${iter.productId}`);
+                const eventTriggeredByWhom = e;
+            
+                const cardSectionId = iter.productId;
+
+                inc_dec_cartPage_DB_changes(referenceOfEachSection , eventTriggeredByWhom , cardSectionId);
+            })
 
             parentContainer.append(cloneTemplateElement);
+
 
         }); 
     }
@@ -54,29 +72,12 @@ export const loadProducts = () =>{
         const clonedTemplateNode = emptyCartTemplateRef.content.cloneNode(true);
 
         const paraDIv = document.createElement("p");
-        paraDIv.innerText = "Cart is Empty! Please as Products";
+        paraDIv.innerText = "Cart is Empty! Please add Products";
 
         const parentDivRef = clonedTemplateNode.querySelector(".emptyCart_git_Holder");
 
         parentDivRef.append(paraDIv);
 
         normalElementRef.append(parentDivRef);
-
-
-        // const parentOfCards = document.querySelector(".parentOfItemsContainer");
-        
-        // const gifHolder = document.createElement("div");
-
-        // const imageTag = document.createElement("img");
-
-        // imageTag.src = "../public/empty_Cart_GIF/icons8-empty-cart.gif";
-
-        // imageTag.style.width = "10%";
-        // imageTag.style.marginLeft = "45%";
-
-
-        // gifHolder.append(imageTag);
-
-        // parentOfCards.append(gifHolder);
     }
 }

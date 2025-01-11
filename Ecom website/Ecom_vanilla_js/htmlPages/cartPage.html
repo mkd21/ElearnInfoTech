@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="../src/fontawesome-free-6.7.2-web/css/all.min.css"/>
 
     <link rel="stylesheet" href="../src/css/bootstrap.min.css" >
+
     <!-- custom css -->
     <link rel="stylesheet" href="../src/customCss/style.css"/>
+
+    <!-- cart styling  -->
+
+    <link rel="stylesheet" href="../src/customCss/cartPage_styling/cartStyling.css"/>
 
 </head>
 <body>
@@ -52,7 +57,7 @@
                   <div class="navbar-nav">
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="index.html">Product</a>
                     <a class="nav-link" href="#">Contact</a>
                     <a class="nav-link" href="/htmlPages/cartPage.html"><button class="btn btn-danger addTocartBtn"> <i class="bi bi-cart"></i> <span class="numberCount" >0</span>  </button> </a>
                   </div>
@@ -113,14 +118,54 @@
     
 
 
+    <!-- ========== Start calculate the total Section ========== -->
+    
+    <section class="container totalOfProducts_sectionParent_outerMost">
 
-     <!-- bootstrap js  -->
+      <section class="innerParentContainer">
 
-     <script src="../src/js/bootstrap.min.js"></script>
+        <section class="top">
+          <h4>Selected Products Sum</h4>
+        </section>
+          
+        <section class="subtotalSection">
+          <h5>Sub Total:</h5>
+          <h5>₹ 0</h5>
+        </section>
+  
+        <section class="taxAndOtherChargesSection">
+          <h5>Tax:</h5>
+          <h5>₹ 50</h5>
+        </section>
+  
+        <hr>
+  
+        <section class="finalAmountSection">
+          <h5>Final Total:</h5>
+          <h5>₹ 50</h5>
+        </section>
+
+      </section>
+      
+    </section>
+
+    <!-- ========== End calculate the total Section ========== -->
+    
 
 
-     <!-- custom js  -->
-     <script type="module" src="../src/custom_js/cart_page_logic/cartPageMain.js"></script>
+
+
+    <!-- bootstrap js  -->
+
+    <script src="../src/js/bootstrap.min.js"></script>
+
+
+    <!-- custom js  -->
+    <script type="module" src="../src/custom_js/cart_page_logic/cartPageMain.js"></script>
+
+    <!-- for total product section  -->
+
+    <script type="module" src="../src/custom_js/cart_page_logic/totalProductsSection/totalProduct.js"></script>
 
 </body>
 </html>

@@ -14,8 +14,11 @@ export const addToLocalStorage = (productDetails) =>{
 
     if(existingProduct)
     {
-        existingProduct.totalItems = Number(productDetails.totalItems) + Number(existingProduct.totalItems) ;
-        existingProduct.totalPrice = Math.round( (existingProduct.totalPrice + productDetails.totalPrice) * 100) / 100;
+        if(Number(productDetails.totalItems) + Number(existingProduct.totalItems) <= productDetails.stockAvailable)
+        {
+            existingProduct.totalItems = Number(productDetails.totalItems) + Number(existingProduct.totalItems);
+            existingProduct.totalPrice = Math.round( (existingProduct.totalPrice + productDetails.totalPrice) * 100) / 100;
+        }
     }
     else{
         availableData.push(productDetails);

@@ -27,20 +27,33 @@ const addToCart  = (id) =>{
     // category of product 
 
     const productCategory = targetCard.querySelector(".itemType").innerText;
-
     console.log(productCategory);
+
 
     // name of product 
 
     const productName = targetCard.querySelector(".productName").innerText;
 
+
+    // total stock 
+
+    const totalStockAvailable = targetCard.querySelector(".totalStock").innerText;
+    const usefulData = totalStockAvailable.replace("Total Stocks Available: " , "");
+
+    // price of single product 
+
+    const singlProdPrice = targetCard.querySelector(".currentPrice").innerText.replace("₹ " , "");
+    // console.log(singlProdPrice);
+
     const total = {
         productId : id,
+        priceOfSingleProduct : singlProdPrice ,
         totalItems : quantityTobeAdded_display_section.innerText,
         totalPrice : Math.round((onlyNumeric_value * quantityTobeAdded_display_section.innerText) * 100) / 100,
         productImage : productImage,
         productCategory : productCategory,
-        productName : productName
+        productName : productName,
+        stockAvailable : usefulData,
     };
 
 
