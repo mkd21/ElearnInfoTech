@@ -2,11 +2,11 @@
 {
     .container
     {
-        max-width: 1490px;
+        max-width: 1490px; 
     }
-    #topBanner
+    #topBanner 
     {
-        padding: 1.2rem;
+        padding: 1.2rem; 
         background-color: #2a2c30;
     }
     .navbar-brand img 
