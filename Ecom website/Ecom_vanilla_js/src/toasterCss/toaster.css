@@ -1,0 +1,61 @@
+
+#toaster-container {
+  background-color: #000000;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+  font-weight: 500;
+  position: sticky; 
+  bottom: 85%;
+  width: 24%;
+  left: 100%;
+  transform: translateX(101%);
+}
+
+.toaster-container-visible
+{
+  background-color: #000000;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+  font-weight: 500;
+  position: sticky; 
+  bottom: 85%;
+  width: 20%;
+  left: 100%;
+  animation: slide-in 0.9s forwards;
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.toaster-container-invisible
+{
+  background-color: #000000;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+  font-weight: 500;
+  position: sticky; 
+  bottom: 85%;
+  width: 20%;
+  left: 100%;
+  animation: fade-out 4s; 
+}
+
+@keyframes fade-out {
+    to {
+      opacity: 0;
+      transform: translateX(101%);
+    }
+}

@@ -6,6 +6,11 @@ import {productsPresentInCart} from "../cartLogoNumberDisplay.js";
 
 import {sumUpTotalInitialtorFunction} from "../totalProductsSection/totalProduct.js";
 
+
+// invoke function for toast notification 
+
+import createToast from "../../../Toaster_js/CustomToaster.js";
+
 export const removeElements = (productId) =>{
 
     console.log("product id is",productId);
@@ -30,4 +35,7 @@ export const removeElements = (productId) =>{
     loadProducts();
     productsPresentInCart();
     sumUpTotalInitialtorFunction();
+
+    const toastParentRef = document.querySelector("#toaster-container");
+    createToast(productId , toastParentRef , null);
 }

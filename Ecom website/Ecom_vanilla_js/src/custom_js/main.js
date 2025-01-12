@@ -5,7 +5,6 @@ import {parentOfAllActivity} from "./workingWith_template";
 import {reset} from "./resetDb.js";
 import { updateCart } from "./updateCart.js";
 
-
 document.addEventListener("DOMContentLoaded" , () =>{
     
     parentOfAllActivity();
@@ -16,6 +15,5 @@ document.addEventListener("DOMContentLoaded" , () =>{
     
     resetButton.addEventListener("click" , ()=>{
         reset();
-    });
-    
+    }); 
 })

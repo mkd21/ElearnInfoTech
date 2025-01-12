@@ -3,6 +3,8 @@ import {addToLocalStorage} from "./addToLocalStorage.js";
 
 import { updateCart } from "./updateCart.js";
 
+import createToast from "../Toaster_js/CustomToaster.js";
+
 const addToCart  = (id) =>{
    
     const targetCard = document.querySelector(`#card${id}`);
@@ -63,6 +65,10 @@ const addToCart  = (id) =>{
     // now updating the cart value 
     updateCart();
 
+    // toast notification 
+
+    const toastParentRef = document.querySelector("#toaster-container");
+    createToast(id , toastParentRef , productName);
 }
 
 export default addToCart;

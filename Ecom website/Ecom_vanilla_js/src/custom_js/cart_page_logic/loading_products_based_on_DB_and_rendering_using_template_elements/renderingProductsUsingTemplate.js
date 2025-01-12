@@ -43,6 +43,8 @@ export const loadProducts = () =>{
 
             cloneTemplateElement.querySelector(".imageOfProduct").querySelector("img").src = iter.productImage;
 
+
+            
             cloneTemplateElement.querySelector(".removeBtn").addEventListener( "click" , ()=>{
                 removeElements(iter.productId);
             });
