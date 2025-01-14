@@ -1,0 +1,17 @@
+
+.parent_whyChooseUs
+{
+    margin-top: 1.3rem;
+}
+.firstSection p
+{
+    font-size: clamp(1.1rem, 3vw, 2.2rem);
+    font-weight: 500;
+}
+
+.secondSection p
+{
+    font-size: clamp(.4rem, 2vw, 1.3rem);
+    font-weight: 500;
+    word-spacing: 2px;
+}

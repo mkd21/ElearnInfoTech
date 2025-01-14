@@ -1,0 +1,30 @@
+
+.parentContainer_formAnd_Map
+{
+    padding-top:6.4rem;
+    padding-bottom: 6.4rem;
+    justify-content: space-around;
+}
+
+.leftSideForm
+{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    backdrop-filter: blur(4px); background-color: rgba(255, 255, 255, 0.7); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(94, 122, 154, 0.5), inset -8px -8px 16px 0px rgba(94, 122, 154, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);}
+
+.topSection p:nth-child(1)
+{
+    font-size: clamp(1rem, 2vw, 2.2rem);
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.topSection p:nth-child(2)
+{
+    font-size : clamp(1rem, 2vw, 1.2rem);
+}
+.btn-success
+{
+    margin-top:1.1rem;
+}

@@ -6,6 +6,7 @@ import {loadProducts} from "./loading_products_based_on_DB_and_rendering_using_t
 
 import {sumUpTotalInitialtorFunction} from "../cart_page_logic/totalProductsSection/totalProduct.js";
 
+
 document.addEventListener("DOMContentLoaded" , () =>{
 
     // number of products present in the cart method 
@@ -14,5 +15,5 @@ document.addEventListener("DOMContentLoaded" , () =>{
     loadProducts();
 
     sumUpTotalInitialtorFunction();
-
+    
 })

@@ -1,0 +1,57 @@
+
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+
+.mddlePartImageHolder
+{
+    /* background-color: brown; */
+    padding-top: 11rem;
+    padding-left: 1rem;
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    height: 460px;
+    width: 460px;
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

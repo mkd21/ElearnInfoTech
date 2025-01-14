@@ -2,18 +2,14 @@
 
 import {parentOfAllActivity} from "./workingWith_template";
 
-import {reset} from "./resetDb.js";
 import { updateCart } from "./updateCart.js";
+
+import {dynamicFooter} from "./commonFooter/footer.js";
+
 
 document.addEventListener("DOMContentLoaded" , () =>{
     
     parentOfAllActivity();
-    
+    dynamicFooter();
     updateCart();
-    
-    const resetButton = document.querySelector(".btn-outline-danger");
-    
-    resetButton.addEventListener("click" , ()=>{
-        reset();
-    }); 
 })
