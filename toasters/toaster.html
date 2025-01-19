@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Example</title>
+    <style>
+        /* You can add this to your CSS file for styling the toast */
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showToast('This is a toast!')">Show Toast</button>
+
+    <script>
+        // Function to show the toast
+        function showToast(message) {
+            // Create the toast element
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerText = message;
+
+            // Append the toast to the body
+            document.body.appendChild(toast);
+
+            // Use setTimeout to add the 'show' class after a small delay to trigger the animation
+            setTimeout(() => {
+                toast.classList.add('show');
+            }, 100);
+
+            // Remove the toast after 3 seconds (3000ms)
+            setTimeout(() => {
+                toast.classList.remove('show');
+                // Remove the toast element from the DOM after animation
+                setTimeout(() => {
+                    toast.remove();
+                }, 500); // Wait for the fade-out transition to complete
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
