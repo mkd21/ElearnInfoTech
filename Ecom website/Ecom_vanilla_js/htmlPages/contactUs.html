@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="../src/fontawesome-free-6.7.2-web/css/all.min.css"/>
 
     <link rel="stylesheet" href="../src/css/bootstrap.min.css" >
+
+
     <!-- custom css -->
     <link rel="stylesheet" href="../src/customCss/style.css"/>
 
-    <!-- left sction form styling  -->
+
+    <!--  contact us page styling  -->
     <link rel="stylesheet" href="../src/customCss/contactUS/contact.css"/>
 
     <!-- footer css  -->
@@ -31,64 +34,63 @@
     
     <header>
 
-        <div class="container">
-  
-          <div id="topBanner" class="d-flex justify-content-between" >
-            <div>
-              <p style="color: white;" >Free shipping, 30-day return or refund guarantee.</p>
-            </div>
-            
-            <div class="rightSection">
-              <button class="btn btn-success" >SIGN IN</button>
-              <button class="btn btn-warning" >SIGN UP</button>
-            </div>
-            
+      <div class="container topMostDiv">
+
+        <div id="topBanner" class="d-flex justify-content-between col-lg-12" >
+          <div>
+            <p style="color: white;" class="ps-3">Free shipping, 30-day return or refund guarantee.</p>
           </div>
-  
-          <div id="navabar" style="color: white;" >
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  
-              <div class="container navbar">
-  
-                <div id="left" >
-                  <a class="navbar-brand" href="../index.html">
-                    <img src="/images/navbarLogo.png" />
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-  
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Home</a>
-                    <a class="nav-link" href="./aboutUs.html">About</a>
-                    <a class="nav-link" href="./products.html">Product</a>
-                    <a class="nav-link" href="./contactUs.html">Contact</a>
-                    <a class="nav-link" href="./cartPage.html"><button class="btn btn-danger addTocartBtn"> <i class="bi bi-cart"></i> <span class="numberCount" ></span> </button> </a>
-                  </div>
-                </div>
-  
-              </div>
-             </nav>
+          
+          <div class="rightSection">
+            <button class="btn btn-success" >SIGN IN</button>
+            <button class="btn btn-warning" >SIGN UP</button>
           </div>
-  
+          
         </div>
-  
+
+        <div id="navbar" style="color: white;" >
+          <nav class="navbar navbar-expand-lg bg-body-secondary">
+
+            <div class="container navbar">
+
+              <div id="left" class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-5 me-xl-0 ps-xl-5">
+                <a class="navbar-brand me-5" href="../index.html">
+                  <img src="/images/navbarLogo.png" class="w-100"/>
+                </a>
+                <button class="navbar-toggler col-5 col-md-3 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse text-center ms-5 ms-xl-0 col-lg-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center ">
+                  <a class="nav-link" href="../index.html">Home</a>
+                  <a class="nav-link" href="./aboutUs.html">About</a>
+                  <a class="nav-link" href="./products.html">Product</a>
+                  <a class="nav-link" href="./contactUs.html">Contact</a>
+                  <a class="nav-link" href="./cartPage.html"><button class="btn btn-danger addTocartBtn"> <i class="bi bi-cart"></i> <span class="numberCount" ></span> </button> </a>
+                </div>
+              </div>
+
+            </div>
+           </nav>
+        </div>
+
+      </div>
+
     </header>
 
     <!-- ========== End Header Section ========== -->
 
 
-
     <!-- ========== Start form and map Section ========== -->
 
-    <section class="container parentContainer_formAnd_Map d-flex ">
+    <section class="container parentContainer_formAnd_Map d-md-block d-lg-flex mt-5 ">
 
-            <section class="leftSideForm col-lg-5 ">
+            <section class="leftSideForm col-12 col-lg-6 mb-5 pt-5 me-lg-2">
                 <section class="topSection">
-                    <p class="text-capitalize" >contact us</p>
-                    <p class="text-capitalize" >Get in touch with us. We are always here to help you.</p>
+                    <p class="text-capitalize mb-4">contact us</p>
+                    <p class="text-capitalize">Get in touch with us. We are always here to help you.</p>
 
                     <form action="#">
 
@@ -111,13 +113,18 @@
                 </section>
             </section>
 
-            <section class="rightSideForm col-lg-5 bg-success-subtle">
+            <section class="rightSideForm col-12 col-lg-6 ms-lg-2 bg-success-subtle">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31962.227135856243!2d78.36713573246277!3d17.45712423533723!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1736880110545!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
     </section>
     
     <!-- ========== End form and map Section ========== -->
+
+
+      <!-- bootstrap js  -->
+
+      <script src="../src/js/bootstrap.min.js"></script>
 
 
     <!-- custom js for contact us page  -->

@@ -27,81 +27,83 @@
 <body>
 
 
-    <header>
+  <header>
 
-        <div class="container">
-  
-          <div id="topBanner" class="d-flex justify-content-between" >
-            <div>
-              <p style="color: white;" >Free shipping, 30-day return or refund guarantee.</p>
-            </div>
-            
-            <div class="rightSection">
-              <button class="btn btn-success" >SIGN IN</button>
-              <button class="btn btn-warning" >SIGN UP</button>
-            </div>
-            
-          </div>
-  
-          <div id="navabar" style="color: white;" >
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  
-              <div class="container navbar">
-  
-                <div id="left" >
-                  <a class="navbar-brand" href="../index.html">
-                    <img src="/images/navbarLogo.png" />
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-  
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="./aboutUs.html">About</a>
-                    <a class="nav-link" href="./products.html">Product</a>
-                    <a class="nav-link" href="./contactUs.html">Contact</a>
-                    <a class="nav-link" href="/htmlPages/cartPage.html"><button class="btn btn-danger addTocartBtn"> <i class="bi bi-cart"></i> <span class="numberCount" ></span>  </button> </a>
-                  </div>
-                </div>
-  
-              </div>
-            </nav>
-          </div>
-  
+    <div class="container topMostDiv">
+
+      <div id="topBanner" class="d-flex justify-content-between col-lg-12" >
+        <div>
+          <p style="color: white;" class="ps-3">Free shipping, 30-day return or refund guarantee.</p>
         </div>
-  
-    </header>
+        
+        <div class="rightSection">
+          <button class="btn btn-success" >SIGN IN</button>
+          <button class="btn btn-warning" >SIGN UP</button>
+        </div>
+        
+      </div>
+
+      <div id="navbar" style="color: white;" >
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+
+          <div class="container navbar">
+
+            <div id="left" class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-5 me-xl-0 ps-xl-5">
+              <a class="navbar-brand me-5" href="../index.html">
+                <img src="/images/navbarLogo.png" class="w-100"/>
+              </a>
+              <button class="navbar-toggler col-5 col-md-3 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse text-center ms-5 ms-xl-0 col-lg-5" id="navbarNavAltMarkup">
+              <div class="navbar-nav align-items-center ">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="./aboutUs.html">About</a>
+                <a class="nav-link" href="./products.html">Product</a>
+                <a class="nav-link" href="./contactUs.html">Contact</a>
+                <a class="nav-link" href="./cartPage.html"><button class="btn btn-danger addTocartBtn"> <i class="bi bi-cart"></i> <span class="numberCount" ></span> </button> </a>
+              </div>
+            </div>
+
+          </div>
+         </nav>
+      </div>
+
+    </div>
+
+  </header>
 
     <!-- ========== Start products inside cart Section ========== -->
     
-    <div class="container parentOfItemsContainer ">
+    <div class="container parentOfItemsContainer mt-5 col-md-11 ms-xl-5 me-xl-5">
       <!-- will render the cards using template element  -->
     </div>
 
     <!-- template element start -->
 
-    <template id="cartPageTemplateElement" >
-      <section class="actualCardContainer">
+    <template id="cartPageTemplateElement">
+      <section class="actualCardContainer w-100">
 
-          <div class="productsCard d-flex align-items-center justify-content-between mb-4 rounded-4">
-              <section class="typeOfProduct bg-danger-subtle p-1 rounded col-lg-1 text-center ">Computer</section>
-              <section class="imageOfProduct col-lg-2 text-center"> <img src="../public/images/lapi.png" /> </section>
-              <section class="productName col-lg-3 text-center ">Laptop</section>
-              <section class="productPrice col-lg-1 text-center fw-bolder"> <p>&#8377; 2222</p> </section>
+          <div class="productsCard md-10 rounded-4 pt-5 mt-md-5 w-100 d-xl-flex align-items-xl-center">
+              <section class="typeOfProduct bg-danger-subtle mb-4 col-6 p-1 rounded col-4 col-sm-1 col-md-5 ms-2 d-md-inline-block col-lg-5 col-xl-2 ms-xl-0 mb-xl-0 text-center">Computer</section>
+              <section class="imageOfProduct col-12 col-md-6 text-center d-md-inline-block col-lg-5 col-xl-2"> <img src="../public/images/lapi.png" class="w-100"/> </section>
+              <section class="productName col-md-5 text-center d-md-inline-block col-lg-5 col-xl-2">Laptop</section>
+              <section class="productPrice text-center col-md-6 col-lg-5 fw-bolder mb-4 d-md-inline-block ms-md-5 col-xl-2 ms-xl-0 mb-xl-0"> <p>&#8377; 2222</p> </section>
 
               <!-- increment and decrement section  -->
-              <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-lg-2 ">
-                  <div class="incrementBtn btn btn-success" >+</div>
-                  <div class="quantityDisplaySection" >3</div>
-                  <div class="decrementBtn btn btn-danger" >-</div>
+              <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-6 mb-4 mt-5 col-lg-6 col-md-5 col-xl-3 mt-xl-0 mb-xl-0">
+                
+                  <div class="incrementBtn btn btn-success">+</div>
+                  <div class="quantityDisplaySection text-center">3</div>
+                  <div class="decrementBtn btn btn-danger">-</div>
+                
               </section>
 
               <!-- remove button  -->
 
-              <button class="btn btn-warning removeBtn col-2">Remove</button>
+              <button class="btn btn-warning removeBtn col-12 mt-5 col-xl-2 mt-xl-0">Remove</button>
           </div>
 
       </section>
@@ -113,7 +115,7 @@
     <!-- template element when cart is empty  -->
 
     <template id = "emptyCart" >
-      <div class="emptyCart_git_Holder">
+      <div class="emptyCart_git_Holder mt-5 ">
         <img src="../public/empty_Cart_GIF/icons8-empty-cart.gif" alt="empty shopping cart">
       </div>
     </template>
@@ -124,9 +126,9 @@
 
     <!-- ========== Start calculate the total Section ========== -->
     
-    <section class="container totalOfProducts_sectionParent_outerMost">
+    <section class="container totalOfProducts_sectionParent_outerMost col-md-6 col-lg-8 mt-5 mb-5">
 
-      <section class="innerParentContainer">
+      <section class="innerParentContainer w-100 ">
 
         <section class="top">
           <h4>Selected Products Sum</h4>

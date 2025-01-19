@@ -46,7 +46,7 @@ export const dynamicFooter = () => {
         </div>
         <!-- Footer Bottom -->
         <div class="footer-bottom">
-          <p>Design and Code by Thapa Technical</p>
+          <p>Design and Code by Mayank Deep</p>
         </div>
       </footer>
     `;

@@ -1,3 +1,2480 @@
+
+/* common bg for all pages  */
+
+#topBanner 
+{
+    background-color: #645555;
+}
+
+/* extra small devices  */
+
+@media (max-width : 575px)
+{
+    .container 
+    {
+        width: 100%;
+    }
+
+    /* top banner  */
+
+    .topMostDiv
+    {
+        margin-left: 0.5rem;
+    }
+    #topBanner
+    {
+        background-color: #645555;
+        margin-left: -12px;
+        align-items: center;
+        padding-left: 1.1rem;
+        letter-spacing: 3px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #topBanner p
+    {
+        font-size: clamp(0.8rem, 2vw, 1.3rem);
+        letter-spacing: 0px;
+    }
+    
+    .rightSection button
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+        font-weight: 800;
+    }
+
+    /* navbar related styling  */
+    #navbar
+    {
+        margin-left: -0.8rem !important;
+    }
+    #left
+    {
+        display: flex;
+        align-items: center;
+        padding: 0px 1.1rem;
+    }
+    #left button 
+    {
+        width: 5rem;
+        height: 4rem;
+    }
+    .navbar-brand img 
+    {
+        width: 25%;
+    }
+
+
+    /* hero section  */
+
+    #parent_left_right_div 
+    {
+        margin: 3.2rem 0 3.2rem 0;
+    }
+
+    .leftDiv 
+    {
+        order: 2;
+        text-align: center;
+    }
+
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 3.2rem);
+        font-weight: 700;
+        text-shadow: 0px 8px 11px #624c77;
+    }
+    
+    .rightDiv
+    {
+        order: 1;
+        margin-bottom: 2.2rem;
+    }
+
+    /* 3 card section  */
+
+    .Three_card_grandParent
+    {
+        flex-direction: column;
+    }
+
+    .threeProducts_card
+    {
+        margin-bottom: 1.2rem;
+        border-radius: 53px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  26px 26px 52px #929292,-26px -26px 52px #ffffff;
+    }
+    .card-description
+    {
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+    .card-description h2
+    {
+        font-family: "Open Sans", serif;
+        font-weight: 700;
+    }
+    .card-image
+    {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    /* services we provide  */
+
+    #facilitiesProvides
+    {
+        margin-left: 0.9rem;
+        margin-top: 2.2rem;
+        width: 94%;
+        padding-bottom: 1.2rem;
+
+        /* From https://css.glass */
+        background: rgba(229, 162, 162, 0.02);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(229, 162, 162, 0.47);
+    }
+    .facilityProvidedCards
+    {
+        text-align: center;
+        padding-top: 3.2rem;
+        margin-bottom: 4.2rem;
+    }
+    .facilityProvidedCards i 
+    {
+        font-size: 4.2rem;
+    }
+    .details
+    {
+        margin-top: 1.2rem;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    /* some of our product section  */
+    #someofOurProductSection
+    {
+        text-align: center;
+        margin-top: 2.5rem;
+        letter-spacing: 2px;
+        padding-left: 1.9rem;
+    }
+    #someofOurProductSection h1 
+    {
+        border-bottom: 1px dotted green;
+    }
+
+
+    /* product cards section  */
+
+    #whyChooseUs
+    {
+        margin-top: 6rem;
+        margin-left: 1rem;
+        width: 93%;
+    }
+    
+    .cardParent
+    {
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        border-radius: 23px;
+        box-shadow: 9px 10px 10px grey;
+        padding-bottom: 2.2rem;
+        margin-bottom: 3.1rem;
+    }
+
+    .itemType
+    {
+        background-color: #e06767;
+        border-radius: 23px;
+        width: clamp(14%, 32vw, 37%);
+        text-align: center;
+        color:white;
+    }
+    .productImage
+    {
+        width: 90%;
+    }
+    .productImage img 
+    {
+        width: 100%;
+    }
+    .productName
+    {
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: 500;
+    }
+    .productRating i 
+    {
+        color: goldenrod;
+    }
+    .prod-description p
+    {
+        font-size: clamp(1.2rem, 2vw, 1.3rem);
+        padding-right: 1rem;
+        font-weight: 400;
+    }
+
+    .product_price
+    {
+        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-weight: 500;
+    }
+    .currentPrice
+    {
+        margin-right: 1.2rem;
+    }
+    .totalStock
+    {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+        margin-top: 1.1rem;
+        font-weight: 500;
+    }
+    .quantityToAddinCart
+    {
+        margin-top: 1.5rem;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+    }
+    .productIncrementDecrementFunctionality
+    {
+        margin-left: 1.2rem; 
+        width: 47%;  
+    }
+    .productIncrementDecrementFunctionality p 
+    {
+        width: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .productIncrementDecrementFunctionality button
+    {
+        width: 3.2rem;
+    }
+    .addToCardButton
+    {
+        margin-top:1.2rem;
+    }
+
+    
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+    margin-left: 1.8rem;
+    width: 90%;
+
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* FOOTER SECTION */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #footerParent
+  {
+    margin-left: 1rem;
+    width: 92%;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-logo p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .payment-icons img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ffff; /* Highlighted heading color */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .footer-section form {
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section input[type="email"]::placeholder {
+    color: #888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+
+  /* toaster styling  */
+
+#toaster-container {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: none;
+    transform: translateX(120%);
+  }
+  
+  #toaster-container.toaster-container-visible       /* this is done to increse the specificity */
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: block;
+    animation: slide-in 0.3s forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  .toaster-container-invisible
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 20%;
+    left: 100%;
+    display: none;
+    animation: fade-out 4s; 
+  }
+  
+  @keyframes fade-out {
+      to {
+        opacity: 0;
+        transform: translateX(120%);
+      }
+  }
+    
+}
+
+
+/* small devices  */
+
+@media (min-width : 576px) and (max-width : 767px)
+{
+    
+    .topMostDiv
+    {
+        max-width: 100vw;
+        margin-left: 0.5rem;
+    }
+
+    #topBanner
+    {
+        background-color: #645555;
+        margin-left: -12px;
+        align-items: center;
+        padding-left: 1.1rem;
+        letter-spacing: 3px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #topBanner p
+    {
+        font-size: clamp(0.8rem, 2vw, 1.3rem);
+        letter-spacing: 0px;
+    }
+    
+    .rightSection button
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+        font-weight: 800;
+    }
+
+    /* navbar related styling  */
+    #navbar
+    {
+        margin-left: -0.8rem !important;
+    }
+    
+    #left
+    {
+        display: flex;
+        padding: 0px 1.1rem;
+    }
+    .navbar-brand img 
+    {
+        width: 25%;
+    }
+
+
+    /* hero section  */
+
+    #parent_left_right_div 
+    {
+        margin: 3.2rem 0 3.2rem 0;
+    }
+
+    .leftDiv 
+    {
+        order: 2;
+        text-align: center;
+    }
+
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 3.2rem);
+        font-weight: 700;
+        text-shadow: 0px 8px 11px #624c77;
+    }
+    
+    .rightDiv
+    {
+        order: 1;
+        margin-bottom: 2.2rem;
+    }
+
+    /* 3 card section  */
+
+    .Three_card_grandParent
+    {
+        flex-direction: column;
+    }
+
+    .threeProducts_card
+    {
+        margin-bottom: 1.2rem;
+        border-radius: 53px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  26px 26px 52px #929292,-26px -26px 52px #ffffff;
+    }
+    .card-description
+    {
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+    .card-description h2
+    {
+        font-family: "Open Sans", serif;
+        font-weight: 700;
+    }
+    .card-image
+    {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    /* services we provide  */
+
+    #facilitiesProvides
+    {
+        margin:auto;
+        margin-top: 5.2rem;
+        width: 94%;
+        padding-bottom: 1.2rem;
+
+        /* From https://css.glass */
+        background: rgba(229, 162, 162, 0.02);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(229, 162, 162, 0.47);
+    }
+    .facilityProvidedCards
+    {
+        text-align: center;
+        padding-top: 3.2rem;
+        margin-bottom: 4.2rem;
+    }
+    .facilityProvidedCards i 
+    {
+        font-size: 4.2rem;
+    }
+    .details
+    {
+        margin-top: 1.2rem;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    /* some of our product section  */
+    #someofOurProductSection
+    {
+        text-align: center;
+        margin-top: 2.5rem;
+        letter-spacing: 2px;
+        padding-left: 1.9rem;
+    }
+    #someofOurProductSection h1 
+    {
+        border-bottom: 1px dotted green;
+    }
+
+
+    /* product cards section  */
+
+    #whyChooseUs
+    {
+        margin: auto;
+        margin-top: 6rem;
+        width: 93%;
+    }
+    
+    .cardParent
+    {
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        border-radius: 23px;
+        box-shadow: 9px 10px 10px grey;
+        padding-bottom: 2.2rem;
+        margin-bottom: 3.1rem;
+    }
+
+    .itemType
+    {
+        background-color: #e06767;
+        border-radius: 23px;
+        width: clamp(14%, 32vw, 37%);
+        text-align: center;
+        color:white;
+    }
+    .productImage
+    {
+        width: 90%;
+    }
+    .productImage img 
+    {
+        width: 100%;
+    }
+    .productName
+    {
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: 500;
+    }
+    .productRating i 
+    {
+        color: goldenrod;
+    }
+    .prod-description p
+    {
+        font-size: clamp(1.2rem, 2vw, 1.3rem);
+        padding-right: 1rem;
+        font-weight: 400;
+    }
+
+    .product_price
+    {
+        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-weight: 500;
+    }
+    .currentPrice
+    {
+        margin-right: 1.2rem;
+    }
+    .totalStock
+    {
+        font-size: clamp(1rem, 2vw, 1.4rem);
+        margin-top: 1.1rem;
+        font-weight: 500;
+    }
+    .quantityToAddinCart
+    {
+        margin-top: 1.5rem;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+    }
+    .productIncrementDecrementFunctionality
+    {
+        margin-left: 1.2rem; 
+        width: 47%;  
+    }
+    .productIncrementDecrementFunctionality p 
+    {
+        width: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .productIncrementDecrementFunctionality button
+    {
+        width: 3.2rem;
+    }
+    .addToCardButton
+    {
+        margin-top:1.2rem;
+    }
+
+    
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin:auto;
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+    width: 90%;
+
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* FOOTER SECTION */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #footerParent
+  {
+    margin:auto;
+    width: 92%;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-logo p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .payment-icons img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ffff; /* Highlighted heading color */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .footer-section form {
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section input[type="email"]::placeholder {
+    color: #888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+
+  /* toaster styling  */
+
+#toaster-container {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: none;
+    transform: translateX(120%);
+  }
+  
+  #toaster-container.toaster-container-visible       /* this is done to increse the specificity */
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: block;
+    animation: slide-in 0.3s forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .toaster-container-invisible
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 20%;
+    left: 100%;
+    display: none;
+    animation: fade-out 4s; 
+  }
+  
+  @keyframes fade-out {
+      to {
+        opacity: 0;
+        transform: translateX(120%);
+      }
+  }
+  
+}
+
+/* Medium Devices (Tablets) */
+
+@media (min-width : 768px) and (max-width : 991px)
+{
+    .topMostDiv
+    {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    #topBanner
+    {
+        background-color: #645555;
+        margin-left: -12px;
+        align-items: center;
+        padding-left: 1.1rem;
+        letter-spacing: 3px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #topBanner p
+    {
+        font-size: clamp(0.8rem, 2vw, 1.3rem);
+        letter-spacing: 0px;
+    }
+    
+    .rightSection button
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+        font-weight: 800;
+    }
+
+    /* navbar related styling  */
+    #navbar
+    {
+        margin-left: -0.8rem !important;
+    }
+    
+    #left
+    {
+        display: flex;
+        align-items: center;
+        padding: 0px 1.1rem;
+    }
+    #left button 
+    {
+        width: 5rem;
+        height: 4rem;
+    }
+    .navbar-brand img 
+    {
+        width: 25%;
+    }
+
+
+    /* hero section  */
+
+    #parent_left_right_div 
+    {
+        margin: auto;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .leftDiv 
+    {
+        order: 2;
+        text-align: center;
+    }
+
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 3.2rem);
+        font-weight: 700;
+        text-shadow: 0px 8px 11px #624c77;
+    }
+    
+    .rightDiv
+    {
+        order: 1;
+        margin-bottom: 2.2rem;
+    }
+
+    /* 3 card section  */
+
+    .Three_card_grandParent
+    {
+        flex-direction: column;
+        margin-top: 5.2rem;
+    }
+
+    .threeProducts_card
+    {
+        margin-bottom: 1.2rem;
+        border-radius: 53px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  26px 26px 52px #929292,-26px -26px 52px #ffffff;
+    }
+    .card-description
+    {
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+    .card-description h2
+    {
+        font-family: "Open Sans", serif;
+        font-weight: 700;
+    }
+    .card-image
+    {
+        margin: auto;
+        padding-bottom: 1.2rem;
+    }
+
+    /* services we provide  */
+
+    #facilitiesProvides
+    {
+        margin:auto;
+        margin-top: 5.2rem;
+        width: 94%;
+        padding-bottom: 1.2rem;
+
+        /* From https://css.glass */
+        background: rgba(229, 162, 162, 0.02);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(229, 162, 162, 0.47);
+    }
+    .facilityProvidedCards
+    {
+        text-align: center;
+        padding-top: 3.2rem;
+        margin-bottom: 4.2rem;
+    }
+    .facilityProvidedCards i 
+    {
+        font-size: 4.2rem;
+    }
+    .details
+    {
+        margin-top: 1.2rem;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    /* some of our product section  */
+    #someofOurProductSection
+    {
+        margin: auto;
+        text-align: center;
+        margin-top: 4rem;
+        letter-spacing: 2px;
+        padding-left: 1.9rem;
+    }
+    #someofOurProductSection h1 
+    {
+        border-bottom: 1px dotted green;
+        font-size: 3.4rem;
+    }
+
+
+    /* product cards section  */
+
+    #whyChooseUs
+    {
+        margin: auto;
+        margin-top: 6rem;
+        width: 93%;
+    }
+    
+    .cardParent
+    {
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        border-radius: 23px;
+        box-shadow: 9px 10px 10px grey;
+        padding-bottom: 2.2rem;
+        margin-bottom: 3.1rem;
+    }
+
+    .itemType
+    {
+        background-color: #e06767;
+        border-radius: 23px;
+        width: clamp(14%, 32vw, 37%);
+        text-align: center;
+        color:white;
+        font-size: 1.6rem;
+    }
+    .productImage
+    {
+        width: 90%;
+    }
+    .productImage img 
+    {
+        width: 100%;
+    }
+    .productName
+    {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .productRating i 
+    {
+        color: goldenrod;
+        font-size: 1.8rem;
+    }
+    .prod-description 
+    {
+        margin-top: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .product_price
+    {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .currentPrice
+    {
+        margin-right: 1.2rem;
+    }
+    .totalStock
+    {
+        font-size: 2.2rem;
+        margin-top: 2.1rem;
+        font-weight: 700;
+    }
+    .quantityToAddinCart
+    {
+        margin-top: 1.5rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .productIncrementDecrementFunctionality
+    {
+        margin-left: 1.2rem; 
+        width: 47%;  
+    }
+    .productIncrementDecrementFunctionality p 
+    {
+        width: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .productIncrementDecrementFunctionality button
+    {
+        width: 3.2rem;
+    }
+    .addToCardButton
+    {
+        margin-top:1.2rem;
+    }
+    .addToCardButton button
+    {
+        width: 50%;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin:auto;
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+    width: 90%;
+    padding-top: 2.2rem;
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.mddlePartImageHolder
+{
+    margin: auto;
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* FOOTER SECTION */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #footerParent
+  {
+    margin:auto;
+    max-width: 100%;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-logo p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .payment-icons img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ffff; /* Highlighted heading color */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .footer-section form {
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section input[type="email"]::placeholder {
+    color: #888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+
+  /* toaster styling  */
+
+#toaster-container {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: none;
+    transform: translateX(120%);
+  }
+  
+  #toaster-container.toaster-container-visible       /* this is done to increse the specificity */
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: block;
+    animation: slide-in 0.3s forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .toaster-container-invisible
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 20%;
+    left: 100%;
+    display: none;
+    animation: fade-out 4s; 
+  }
+  
+  @keyframes fade-out 
+  {
+    to 
+    {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+  }
+}
+
+@media (min-width : 992px) and (max-width : 1200px)
+{
+    .topMostDiv
+    {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    #topBanner
+    {
+        background-color: #645555;
+        align-items: center;
+        padding-left: 1.1rem;
+        letter-spacing: 3px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #topBanner p
+    {
+        font-size: clamp(0.8rem, 2vw, 1.3rem);
+        letter-spacing: 0px;
+    }
+    
+    .rightSection button
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        border-radius: 15px;
+        font-weight: 800;
+    }
+    
+    /* navbar related styling  */
+    #navbar
+    {
+        margin-left: -0.8rem !important;
+    }
+    
+    #left
+    {
+        display: flex;
+        padding: 0px 1.1rem;
+    }
+    .navbar-brand img 
+    {
+        width: 25%;
+    }
+    
+    
+    /* hero section  */
+    
+    #heroSection
+    {
+        max-width: 93vw;
+    }
+    #parent_left_right_div 
+    {
+        margin: auto;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .leftDiv 
+    {
+        order: 2;
+        text-align: center;
+    }
+
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 3.2rem);
+        font-weight: 700;
+        text-shadow: 0px 8px 11px #624c77;
+    }
+    .leftDiv p:nth-child(2)
+    {
+        font-size: 1.4rem;
+        color: blueviolet;
+    }
+    .leftDiv p:nth-child(3)
+    {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    .leftDiv button 
+    {
+        letter-spacing: 3px;
+    }
+    .rightDiv
+    {
+        order: 1;
+        margin-bottom: 2.2rem;
+    }
+
+    /* 3 card section  */
+
+    .Three_card_grandParent
+    {
+        flex-direction: column;
+        margin-top: 5.2rem;
+    }
+
+    .threeProducts_card
+    {
+        margin-bottom: 1.2rem;
+        border-radius: 53px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  26px 26px 52px #929292,-26px -26px 52px #ffffff;
+    }
+    .card-description
+    {
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 2.2rem;
+    }
+    .card-description h2
+    {
+        font-family: "Open Sans", serif;
+        font-weight: 700;
+    }
+    .card-image
+    {
+        margin: auto;
+        padding-bottom: 1.2rem;
+    }
+
+    /* services we provide  */
+
+    #facilitiesProvides
+    {
+        margin:auto;
+        margin-top: 5.2rem;
+        width: 94%;
+        padding-bottom: 1.2rem;
+
+        /* From https://css.glass */
+        background: rgba(229, 162, 162, 0.02);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(229, 162, 162, 0.47);
+    }
+    .facilityProvidedCards
+    {
+        text-align: center;
+        padding-top: 3.2rem;
+        margin-bottom: 4.2rem;
+    }
+    .facilityProvidedCards i 
+    {
+        font-size: 4.2rem;
+    }
+    .details
+    {
+        margin-top: 1.2rem;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+    }
+
+    /* some of our product section  */
+    #someofOurProductSection
+    {
+        margin: auto;
+        text-align: center;
+        margin-top: 4rem;
+        letter-spacing: 2px;
+        padding-left: 1.9rem;
+    }
+    #someofOurProductSection h1 
+    {
+        border-bottom: 1px dotted green;
+        font-size: 3.4rem;
+    }
+
+
+    /* product cards section  */
+
+    #whyChooseUs
+    {
+        margin: auto;
+        margin-top: 6rem;
+        width: 93%;
+    }
+    
+    .cardParent
+    {
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        border-radius: 23px;
+        box-shadow: 9px 10px 10px grey;
+        padding-bottom: 2.2rem;
+        margin-bottom: 3.1rem;
+    }
+
+    .itemType
+    {
+        background-color: #e06767;
+        border-radius: 23px;
+        width: clamp(14%, 32vw, 37%);
+        text-align: center;
+        color:white;
+        font-size: 1.6rem;
+    }
+    .productImage
+    {
+        width: 90%;
+    }
+    .productImage img 
+    {
+        width: 100%;
+    }
+    .productName
+    {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .productRating i 
+    {
+        color: goldenrod;
+        font-size: 1.8rem;
+    }
+    .prod-description 
+    {
+        margin-top: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .product_price
+    {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .currentPrice
+    {
+        margin-right: 1.2rem;
+    }
+    .totalStock
+    {
+        font-size: 2.2rem;
+        margin-top: 2.1rem;
+        font-weight: 700;
+    }
+    .quantityToAddinCart
+    {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .productIncrementDecrementFunctionality
+    {
+        margin-left: 1.2rem; 
+        width: 47%;  
+    }
+    .productIncrementDecrementFunctionality p 
+    {
+        width: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .productIncrementDecrementFunctionality button
+    {
+        width: 3.2rem;
+    }
+    .addToCardButton
+    {
+        margin-top:1.2rem;
+    }
+    .addToCardButton button
+    {
+        width: 50%;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin:auto;
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+    width: 90%;
+    padding-top: 2.2rem;
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.mddlePartImageHolder
+{
+    margin: auto;
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* FOOTER SECTION */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #footerParent
+  {
+    margin:auto;
+    max-width: 100%;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-logo p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .payment-icons img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ffff; /* Highlighted heading color */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .footer-section form {
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section input[type="email"]::placeholder {
+    color: #888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+
+  /* toaster styling  */
+
+#toaster-container {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: none;
+    transform: translateX(120%);
+  }
+  
+  #toaster-container.toaster-container-visible       /* this is done to increse the specificity */
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: block;
+    animation: slide-in 0.3s forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .toaster-container-invisible
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 20%;
+    left: 100%;
+    display: none;
+    animation: fade-out 4s; 
+  }
+  
+  @keyframes fade-out 
+  {
+    to 
+    {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+  }
+}
+
+@media (min-width : 1200px) and (max-width : 1400px)
+{
+    .topMostDiv
+    {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .container .navbar
+    {
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+    }
+    .navbar-nav
+    {
+        margin-left: 7.2rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .navbar-nav button 
+    {
+        font-size: 1.8rem;
+    }
+
+    /* hero section  */
+    #heroSection 
+    {
+        max-width: 100vw;
+    }
+
+    .leftDiv p:nth-child(1)
+    {
+        font-size: clamp(1rem, 5vw, 3.2rem);
+        font-weight: 700;
+        text-shadow: 0px 8px 11px #624c77;
+    }
+    .leftDiv p:nth-child(2)
+    {
+        font-size: 1.4rem;
+        color: blueviolet;
+    }
+    .leftDiv p:nth-child(3)
+    {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    .leftDiv button 
+    {
+        letter-spacing: 3px;
+    }
+
+
+    /* three card section  */
+
+    .Three_card_grandParent
+    {
+        margin: 0;
+        padding: 0;
+        max-width: 90vw;
+    }
+
+    .threeProducts_card
+    {
+        border: 1px solid #ece8e8;
+        box-shadow: 4px 9px 10px #a89f9f;
+        border-radius: 16px;
+    }
+    #card1_IMG_container 
+    {
+        width: 32%;
+    }
+    #card2_IMG_container
+    {
+        width: 20%;
+    }
+    #card3_IMG_container
+    {   
+        width: 20%;
+    }
+
+
+    /* facilities we provide  */
+    #facilitiesProvides
+    {
+        margin: 0;
+        padding: 0;
+        max-width: 85vw;
+    }
+
+    .smallLogo
+    {
+        font-size: 5.2rem;
+    }
+    .details
+    {
+        font-size: 2.4rem;
+    }
+
+    /* some of our product section  */
+    #someofOurProductSection h1
+    {
+        font-size: 4.5rem;
+        text-shadow: 5px 9px 10px burlywood;
+    }
+
+
+    /* multiple cards section  */
+    #whyChooseUs
+    {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .cardParent
+    {
+        /* border: 1px solid black; */
+        box-shadow: 9px 11px 12px grey;
+        border-radius: 23px;
+    }
+
+    .itemType
+    {
+        background-color: #e06767;
+        border-radius: 23px;
+        width: clamp(14%, 32vw, 37%);
+        text-align: center;
+        color:white;
+        font-size: 1.6rem;
+    }
+    .productImage
+    {
+        width: 90%;
+    }
+    .productImage img 
+    {
+        width: 100%;
+    }
+    .productName
+    {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .productRating i 
+    {
+        color: goldenrod;
+        font-size: 1.8rem;
+    }
+    .prod-description 
+    {
+        margin-top: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .product_price
+    {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .currentPrice
+    {
+        margin-right: 1.2rem;
+    }
+    .totalStock
+    {
+        font-size: 1.5rem;
+        margin-top: 2.1rem;
+        font-weight: 700;
+    }
+    .quantityToAddinCart
+    {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .productIncrementDecrementFunctionality
+    {
+        margin-left: 1.2rem; 
+        width: 47%;  
+    }
+    .productIncrementDecrementFunctionality p 
+    {
+        width: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .productIncrementDecrementFunctionality button
+    {
+        width: 3.2rem;
+    }
+    .addToCardButton
+    {
+        margin-top:1.2rem;
+    }
+    .addToCardButton button
+    {
+        width: 97%;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+/* why choose us 6 reasons section  */
+
+.sixReasonsSection
+{
+    margin:auto;
+    margin-top: 7.5rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid #efe4e4;
+    box-shadow: 5px 5px 19px #a66eaa, -2px 7px 5px grey;
+    width: 90%;
+    padding-top: 2.2rem;
+}
+
+.parentSections i
+{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #0b37de;
+}
+
+.headerSection
+{
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.descriptionAboutServices
+{
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.mddlePartImageHolder
+{
+    margin: auto;
+}
+
+.circle 
+{
+    background-color: #3a4ec7;
+    border-radius: 50%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mddlePartImageHolder img 
+{
+    width: 80%;
+}
+
+.rightSection 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* FOOTER SECTION */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #footerParent
+  {
+    margin:auto;
+    max-width: 100%;
+  }
+
+  .footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-logo p {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .payment-icons img {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ffff; /* Highlighted heading color */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #cfcfcf;
+  }
+  
+  .footer-section form {
+    margin-top: 10px;
+  }
+  
+  .footer-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .footer-section input[type="email"]::placeholder {
+    color: #888;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+
+
+  /* toaster styling  */
+
+#toaster-container {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: none;
+    transform: translateX(120%);
+  }
+  
+  #toaster-container.toaster-container-visible       /* this is done to increse the specificity */
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 70%;
+    left: 100%;
+    display: block;
+    animation: slide-in 0.3s forwards;
+  }
+  
+  @keyframes slide-in {
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .toaster-container-invisible
+  {
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 14px;
+    font-weight: 500;
+    position: sticky; 
+    bottom: 85%;
+    width: 20%;
+    left: 100%;
+    display: none;
+    animation: fade-out 4s; 
+  }
+  
+  @keyframes fade-out 
+  {
+    to 
+    {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+  }
+}
+
 @media (min-width : 1400px)
 {
     .container
