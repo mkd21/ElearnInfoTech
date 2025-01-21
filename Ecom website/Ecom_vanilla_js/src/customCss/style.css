@@ -2090,7 +2090,8 @@ body {
     {
         margin: 0;
         padding: 0;
-        max-width: 90vw;
+        max-width: 70vw;
+        margin-left: 8.7rem;
     }
 
     .threeProducts_card
@@ -2119,6 +2120,14 @@ body {
         margin: 0;
         padding: 0;
         max-width: 85vw;
+        margin-left: 6rem;
+
+        background: rgba(229, 162, 162, 0.02);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.3px);
+        -webkit-backdrop-filter: blur(4.3px);
+        border: 1px solid rgba(229, 162, 162, 0.47);
     }
 
     .smallLogo
@@ -2143,20 +2152,28 @@ body {
     {
         margin: 0;
         padding: 0;
-        max-width: 100%;
+        max-width: 80%;
+        margin-left: 8rem;
     }
     .cardParent
     {
-        /* border: 1px solid black; */
+        /* height: 100vh; */
+        width: 30%;
+        /* background-color: #4484fb; */
+        padding-top: 1.1rem;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        border-radius: 23px;
         box-shadow: 9px 11px 12px grey;
         border-radius: 23px;
+
     }
 
     .itemType
     {
         background-color: #e06767;
         border-radius: 23px;
-        width: clamp(14%, 32vw, 37%);
+        width: 13rem;
         text-align: center;
         color:white;
         font-size: 1.6rem;
@@ -2171,8 +2188,9 @@ body {
     }
     .productName
     {
-        font-size: 4rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: justify;
     }
     .productRating i 
     {
@@ -2188,7 +2206,7 @@ body {
 
     .product_price
     {
-        font-size: 2.4rem;
+        font-size: 1.9rem;
         font-weight: 600;
     }
     .currentPrice
@@ -2197,7 +2215,7 @@ body {
     }
     .totalStock
     {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 2.1rem;
         font-weight: 700;
     }
@@ -2209,8 +2227,8 @@ body {
     }
     .productIncrementDecrementFunctionality
     {
-        margin-left: 1.2rem; 
-        width: 47%;  
+        /* margin-left: 1.2rem;  */
+        width: 50%;  
     }
     .productIncrementDecrementFunctionality p 
     {
@@ -2486,6 +2504,15 @@ body {
         padding: 1.2rem; 
         background-color: #2a2c30;
     }
+
+    .topMostDiv
+    {
+        margin: 0;
+        padding: 0;
+        max-width: 90%;
+        margin-left: 5.2rem;
+    }
+
     .navbar-brand img 
     {
         width: 25%;
@@ -2547,9 +2574,11 @@ body {
     
     .Three_card_grandParent
     {
-        height: 50vh;
+        margin: 0;
+        padding: 0;
+        max-width: 70vw;
         padding-top: 3.3rem;
-        max-width: 1468px;
+        margin-left: 9.3rem !important;
     }
 
     .threeProducts_card 
@@ -2578,9 +2607,15 @@ body {
         text-shadow: 3px 5px 8px rebeccapurple;
     }
 
-    .card-image img 
+    #card2_IMG_container img 
     {
-        width: 100%;
+        max-width: 70%;
+        rotate: 12deg;
+    }
+    
+    #card3_IMG_container img 
+    {
+        max-width: 64%;
         rotate: 12deg;
     }
 
@@ -2589,14 +2624,15 @@ body {
 
     #facilitiesProvides
     {
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+        margin-left: 4.2rem !important;
         height: 25vh;
         padding-top: 2.3rem;
-        box-shadow: 2px 2px 4px grey;
+        box-shadow: 5px 7px 11px #cea9a9;
     }
-    .facilityProvidedCards
-    {
-        height: 80%;
-    }
+
     .smallLogo
     {
         font-size: clamp(1rem, 3vw, 2.5rem);
@@ -2618,7 +2654,10 @@ body {
 
     #someofOurProductSection
     {
-        margin-top: 2.2rem;
+        margin: 0;
+        padding: 0;
+        max-width: 80%;
+        margin-left: 4.4rem;
         font-size: 2.5rem;
         font-weight: 600;
         text-shadow: 10px 10px 14px #14324f;
@@ -2629,19 +2668,18 @@ body {
 
     #whyChooseUs
     {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5.2rem;
-        padding-top: 3.2rem;
-        padding-left: 5.2rem;
-        padding-right: 5.2rem;
+
+        margin: 0;
+        padding: 0;
+        max-width: 87%;
+        margin-left: 6.4rem;
     }
 
 
     /* product card section  */
     .cardParent
     {
-        height: 100vh;
+        /* height: 100vh; */
         /* background-color: #4484fb; */
         padding-top: 1.1rem;
         padding-left: 1.1rem;
@@ -2696,10 +2734,9 @@ body {
         margin-top: 1.1rem;
         font-weight: 500;
     }
-    .quantityToAddinCart
+    .quantityToAddinCart span , .productIncrementDecrementFunctionality
     {
-        margin-top: 1.5rem;
-        font-size: clamp(1rem, 2vw, 1.3rem);
+        width: 50%;
     }
     .productIncrementDecrementFunctionality
     {
@@ -2707,81 +2744,18 @@ body {
     }
     .productIncrementDecrementFunctionality p 
     {
-        width: 3.2rem;
+        width: 2.2rem;
         margin: 0;
         text-align: center;
     }
     .productIncrementDecrementFunctionality button
     {
-        width: 3.2rem;
+        width: 2.2rem;
     }
     .addToCardButton
     {
         margin-top:1.2rem;
     }
-
-
-
-/***** CART PAGE START *****/ 
-
-    .parentOfItemsContainer
-    {
-        max-width: 1468px;
-        margin-top: 6.2rem;
-    }
-
-    .actualCardContainer
-    {
-        margin: 0 4.2rem;
-    }
-
-    .productsCard
-    {
-        height: 30vh;
-        border:1px solid rgb(232, 197, 197);
-        box-shadow:10px 10px 14px grey;
-    }
-
-    .typeOfProduct
-    {
-        margin-left: 1.1rem;
-        font-weight: 600;
-    }
-
-    .imageOfProduct
-    {
-        width: 14%;
-    }
-    .imageOfProduct img 
-    {
-        width: 100%;
-    }
-    
-    .removeBtn
-    {
-        margin-right: 1.1rem;
-    }
-
-    .emptyCart_git_Holder
-    {
-        padding-left: 45%;
-    }
-    
-    .emptyCart_git_Holder img 
-    {
-        display: block;
-        width: 10%;
-    }
-
-    .emptyCart_git_Holder p 
-    {
-        margin-top: 3%;
-        font-size: 2.2rem;
-        margin-left: -26%;
-        font-weight: 500;
-        text-shadow: 4px 5px 10px #8f4508;
-    }
-
-/*****  CART PAGE END  *****/
     
 }
+

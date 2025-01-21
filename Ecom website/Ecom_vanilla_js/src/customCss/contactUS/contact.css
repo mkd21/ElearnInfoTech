@@ -148,6 +148,10 @@
 {
     .parentContainer_formAnd_Map
     {
+        margin: 0;
+        padding: 0;
+        max-width: 80%;
+        margin-left: 9.3rem;
         padding-top:6.4rem;
         padding-bottom: 6.4rem;
         justify-content: space-around;
@@ -174,15 +178,13 @@
     {
         font-size : clamp(1rem, 2vw, 1.2rem);
     }
-    .btn-success
-    {
-        margin-top:1.1rem;
-    }
+    
+
 
       /* map  */
 
       .rightSideForm
       {
-        height: 58vh;
+        height: 100vh;
       }
 }

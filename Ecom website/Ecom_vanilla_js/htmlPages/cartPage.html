@@ -77,23 +77,23 @@
 
     <!-- ========== Start products inside cart Section ========== -->
     
-    <div class="container parentOfItemsContainer mt-5 col-md-11 ms-xl-5 me-xl-5">
+    <div class="container parentOfItemsContainer mt-5 col-md-11 ms-xl-5 me-xl-5 me-xxl-0">
       <!-- will render the cards using template element  -->
     </div>
 
     <!-- template element start -->
 
     <template id="cartPageTemplateElement">
-      <section class="actualCardContainer w-100">
+      <section class="actualCardContainer w-100 mb-xxl-4">
 
-          <div class="productsCard md-10 rounded-4 pt-5 mt-md-5 w-100 d-xl-flex align-items-xl-center">
+          <div class="productsCard md-10 rounded-4 pt-5 mt-md-5 pt-xxl-0 mt-xxl-0 w-100 d-xl-flex align-items-xl-center">
               <section class="typeOfProduct bg-danger-subtle mb-4 col-6 p-1 rounded col-4 col-sm-1 col-md-5 ms-2 d-md-inline-block col-lg-5 col-xl-2 ms-xl-0 mb-xl-0 text-center">Computer</section>
               <section class="imageOfProduct col-12 col-md-6 text-center d-md-inline-block col-lg-5 col-xl-2"> <img src="../public/images/lapi.png" class="w-100"/> </section>
               <section class="productName col-md-5 text-center d-md-inline-block col-lg-5 col-xl-2">Laptop</section>
-              <section class="productPrice text-center col-md-6 col-lg-5 fw-bolder mb-4 d-md-inline-block ms-md-5 col-xl-2 ms-xl-0 mb-xl-0"> <p>&#8377; 2222</p> </section>
+              <section class="productPrice text-center col-md-6 col-lg-5 fw-bolder mb-4 d-md-inline-block ms-md-5 col-xl-2 ms-xl-0 mb-xl-0  "> <p>&#8377; 2222</p> </section>
 
               <!-- increment and decrement section  -->
-              <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-6 mb-4 mt-5 col-lg-6 col-md-5 col-xl-3 mt-xl-0 mb-xl-0">
+              <section class="d-flex justify-content-around align-items-center inc_dec_Parent col-6 mb-4 mt-5 col-lg-6 col-md-5 col-xl-3 mt-xl-0 mb-xl-0 col-xxl-2">
                 
                   <div class="incrementBtn btn btn-success">+</div>
                   <div class="quantityDisplaySection text-center">3</div>
@@ -115,7 +115,7 @@
     <!-- template element when cart is empty  -->
 
     <template id = "emptyCart" >
-      <div class="emptyCart_git_Holder mt-5 ">
+      <div class="emptyCart_git_Holder mt-5">
         <img src="../public/empty_Cart_GIF/icons8-empty-cart.gif" alt="empty shopping cart">
       </div>
     </template>

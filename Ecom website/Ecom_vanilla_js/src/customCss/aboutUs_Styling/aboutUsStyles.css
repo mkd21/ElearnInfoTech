@@ -125,7 +125,8 @@
         {
             margin: 0;
             padding: 0;
-            max-width: 90vw;
+            max-width: 70vw;
+            margin-left: 8.7rem;
         }
 
         .threeProducts_card
@@ -154,6 +155,13 @@
             margin: 0;
             padding: 0;
             max-width: 85vw;
+            margin-left: 6rem;
+            background: rgba(229, 162, 162, 0.02);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.3px);
+            -webkit-backdrop-filter: blur(4.3px);
+            border: 1px solid rgba(229, 162, 162, 0.47);
         }
 
         .smallLogo
@@ -172,7 +180,8 @@
         {
             margin: 0;
             padding: 0;
-            max-width: 80vw;
+            max-width: 80%;
+            margin-left: 4.2rem;
         }
 
         .firstSection
@@ -538,18 +547,22 @@
 {
     .parent_whyChooseUs
     {
-        margin-top: 1.3rem;
+        margin: 0;
+        padding: 0;
+        max-width: 80%;
+        margin-left: 4.2rem;
     }
     .firstSection p
     {
-        font-size: clamp(1.1rem, 3vw, 2.2rem);
-        font-weight: 500;
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-shadow: 4px 5px 10px rebeccapurple;
     }
 
     .secondSection p
     {
-        font-size: clamp(.4rem, 2vw, 1.3rem);
-        font-weight: 500;
+        font-size: 1.4rem;
+        font-weight: 600;
         word-spacing: 2px;
     }
 
